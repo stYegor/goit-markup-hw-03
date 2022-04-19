@@ -12,6 +12,13 @@ body {
   --primary-white-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
 }
@@ -37,6 +44,11 @@ img {
 .container.main {
   display: flex;
   align-items: center;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo {
@@ -92,12 +104,10 @@ img {
   margin-left: auto;
 }
 
-.contact .contact-item + .contact-item {
-  margin-left: 50px;
-}
-
 .header-tel,
 .header-mail {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -105,9 +115,14 @@ img {
   color: var(--secondary-text-color);
 }
 
+.header-mail {
+  margin-right: 50px;
+}
+
 .address-tel:hover,
 .address-tel:focus,
 .address-mail:hover,
+.address-mail:focus,
 .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus,
@@ -117,20 +132,21 @@ img {
 }
 
 .hero {
-  background: #2f303a;
-  outline: teal;
+  background-color: #2f303a;
   text-align: center;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 
 .hero-btn {
@@ -148,7 +164,6 @@ img {
   cursor: pointer;
   padding: 10px 32px;
   min-width: 200px;
-  margin-bottom: 200px;
 }
 
 .hero-btn:hover,
@@ -158,11 +173,6 @@ img {
 
 .visualy-hidden {
   display: none;
-}
-
-.making {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .making-list {
@@ -193,7 +203,6 @@ img {
 
 .skills {
   padding-top: 0;
-  padding-bottom: 94px;
 }
 
 .skills-list {
@@ -216,9 +225,7 @@ img {
 }
 
 .staff {
-  background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 
 .staff-list {
@@ -227,6 +234,9 @@ img {
 
 .staff-item {
   background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .staff-list .staff-item + .staff-item {
@@ -261,7 +271,7 @@ img {
 }
 
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
